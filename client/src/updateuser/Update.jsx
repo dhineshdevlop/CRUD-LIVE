@@ -30,6 +30,7 @@ const UpdateUser = () => {
             console.log(error)
         });
     },[id]);
+    
     const submitForm = async(e)=>{
         e.preventDefault();
         await axios.put(`http://localhost:8000/api/update/user/${id}`,user)

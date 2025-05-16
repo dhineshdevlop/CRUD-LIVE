@@ -10,7 +10,7 @@ const User = () => {
         const fetchData = async()=>{
             try {
 
-                const response = await axios.get("http://localhost:8000/api/users");
+                const response = await axios.get("https://crud-live-dgob.onrender.com/api/users");
                 setUsers(response.data)
                 
             } catch (error) {
